@@ -4,3 +4,10 @@
 *.ptx
 *.cubin
 *.fatbin
+*.exe
+*.o
+*.c
+*.exp
+*.lib
+*~
+*#*
