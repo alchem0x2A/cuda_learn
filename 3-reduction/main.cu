@@ -17,7 +17,7 @@ __global__ void cudaReduceThread(const T *data, T *result, int len){
     shared_data[tid] = data[pid];
   }
   else{
-    shared_data[tid] = 0.0f;	// make sure no overlap
+    shared_data[tid] = 0.0;	// make sure no overlap
   }
   __syncthreads();
   for (int s = 1; s < blockDim.x; s *= 2){
