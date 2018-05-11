@@ -1,4 +1,3 @@
 # Swap Pointers on Cuda #
-Swap of pointers should be handled on the
-host side, as the pointer to device copy is stored still at the host
-side!
+Simple pointer swap can be done on the host side. 
+Seems no need to use the device sync before swapping.
